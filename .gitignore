@@ -1,0 +1,21 @@
+# IDE/Editor directories at the root
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Java / Spring Boot target folders
+**/target/
+**/.mvn/wrapper/maven-wrapper.jar
+
+# Node modules and build artifacts (in case of nested folders)
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/*.local
+**/.env*
+!**/.env.example

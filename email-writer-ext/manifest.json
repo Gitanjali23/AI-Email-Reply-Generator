@@ -1,0 +1,25 @@
+{
+  "name": "AI Email Reply Generator",
+  "description": "AI-Powered Email Writer Assistant",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost:8080/",
+    "*://mail.google.com/*"
+  ],
+  "action": {
+    "default_title": "AI Email Reply Generator"
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["*://mail.google.com/*"],
+      "css": ["content.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
