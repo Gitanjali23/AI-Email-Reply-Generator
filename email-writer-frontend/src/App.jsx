@@ -117,7 +117,8 @@ function MainApp() {
     setGeneratedReply('');
 
     try {
-      const response = await axios.post('http://localhost:8080/api/generate', {
+      const apiBaseUrl = import.meta.env.VITE_API_URL || 'http://localhost:8080';
+      const response = await axios.post(`${apiBaseUrl}/api/generate`, {
         emailContent,
         tone: tone === 'None' || tone === '' ? '' : tone
       });
