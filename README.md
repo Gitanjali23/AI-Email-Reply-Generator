@@ -8,7 +8,7 @@
 
 An AI-powered email writing assistant that generates smart, contextual, and tone-specific replies to emails. The project is a monorepo containing a Spring Boot backend, a React web client, and a Chrome Extension that integrates directly with Gmail.
 
-🔗 **Live Demo:** []
+🔗 **Live Demo:** [https://ai-email-reply-generator-ngfe.vercel.app/]
 
 ---
 
